@@ -1,0 +1,577 @@
+
+/* Background */
+
+html {
+    overscroll-behavior-y: contain;
+    background: #F8EFE6;
+    background-attachment: fixed;
+}
+
+/* BODY */
+
+body {
+    margin: 0;
+    background-image: url('img/Fond de site 2.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+/* Navbar */
+#navbar {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(248, 239, 230, 1) 0%,
+        rgba(248, 239, 230, 0.9) 20%,
+        rgba(248, 239, 230, 0.6) 40%,
+        rgba(248, 239, 230, 0.4) 60%,
+        rgba(248, 239, 230, 0.2) 80%,
+        rgba(248, 239, 230, 0) 100%
+    );
+    z-index: 1000;
+    transition: 0.5s ease;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+}
+
+.navbar-link:hover{
+    color: #E9B8F7;
+}
+
+body.gradient-nav #navbar {
+    background: linear-gradient(
+        to bottom,
+        rgba(248, 239, 230, 1) 0%,
+        rgba(248, 239, 230, 0.9) 20%,
+        rgba(248, 239, 230, 0.6) 40%,
+        rgba(248, 239, 230, 0.4) 60%,
+        rgba(248, 239, 230, 0.2) 80%,
+        rgba(248, 239, 230, 0) 100%
+    );
+}
+
+/* Navbar Links - Left */
+#navbar-links-left {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    /* margin-left: 40px; */
+    padding: 0;
+}
+
+.navbar-link {
+    margin: 0 40px; /* Adjusted margin on each side */
+    font-size: 20px; /* Adjusted font size */
+    font-weight: bold;
+    color: rgba(87, 11, 143);
+    text-decoration: none;
+    font-family: 'DM Sans';
+    transition: color 0.1s ease;
+}
+
+/* Navbar Links - Right */
+#navbar-links-right {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    /* margin-right: 40px; */
+    padding: 0;
+}
+
+.filler{
+    width: 85px;
+}
+
+.navbar-group {
+    position: relative;
+}
+
+/* Navbar Dropdown */
+.navbar-dropdown {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    position: absolute;
+    overflow: hidden; /* Hide overflowing content */
+    max-height: 0; /* Start with zero height */
+    top: 100%;
+    left: 50%; /* Center the dropdown */
+    transform: translateX(-50%); /* Adjusted to center the dropdown */
+    background-color: transparent;
+    padding: 0.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+/* Display the dropdown when the parent is hovered */
+#massage-button:hover .navbar-dropdown {
+    max-height: 500px; /* Adjusted to a suitable max height */
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Navbar Dropdown List Item */
+.navbar-dropdown li {
+    margin-bottom: 0.5rem;
+}
+
+/* Navbar Dropdown Link */
+.navbar-dropdown a {
+    color: rgba(87, 11, 143);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Change link color on hover */
+.navbar-dropdown a:hover {
+    color: #E9B8F7;
+}
+
+/* Logo */
+#logo-container {
+    position: fixed;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#logo-container .navbar-logo-link {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Center the logo horizontally */
+}
+
+#logo,
+#logo-hover {
+    max-height: 120px; /* Adjusted max height */
+    max-width: 100%; /* Adjusted max width */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    min-height: 10vh; /* Minimum height as a percentage of the viewport height */
+    min-width: 10vw; /* Minimum width as a percentage of the viewport width */
+    object-fit: contain;
+    opacity: 1; /* Ensure the logo is initially visible */
+    transition: opacity 0.3s ease; /* Adjusted transition duration */
+}
+
+#logo-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+#logo-container .navbar-logo-link:hover #logo-hover {
+    opacity: 1;
+}
+
+#logo-container .navbar-logo-link:hover #logo {
+    opacity: 0;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    /* Hide "carte cadeau" on the left */
+    #navbar-links-left a[href="#cartecadeau"] {
+        display: none;
+    }
+
+    /* Hide "a propos" on the right */
+    #navbar-links-right a[href="#propos"] {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Common Section Heading Style */
+.section-heading {
+    font-size:128px;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: rgba(87, 11, 143);
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* Accueil Section */
+.accueil-section {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #E9B8F7;
+}
+
+.accueil-section img{
+    max-width: 800px;
+    padding-left: 130px;
+    padding-right: 20px;
+}
+
+.accueil-text {
+    font-size: 27px;
+    font-family: 'DM Sans';
+    font-weight: normal;
+    text-align: left;
+    color: #2F5735; /* magictouchgreen */
+    padding-right: 130px; /* Adjust padding as needed */
+    padding-left: 20px;
+}
+
+
+/* Massages Section */
+.massage-section {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 80px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+/* Massage Presentation */
+
+.presentation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.image-link {
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    margin-right: 50px; /* Added margin between images */
+}
+
+.image-link:last-child {
+    margin-right: 0; /* Remove margin for the last image */
+}
+
+.image-link img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.6s ease-in-out;
+}
+
+.image-link:hover img {
+    /* transform: scale(1.1); */
+    filter: blur(5px);
+    transition: transform 0.6s ease-in-out;
+}
+
+.image-link:hover {
+    overflow: visible; /* Allow overflow for the pseudo-elements */
+}
+
+.image-link:before,
+.image-link:after {
+    content: attr(data-title);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color:#F8EFE6;
+    font-family: 'Playfair';
+    font-weight: bold;
+    font-size: 24px; /* Increased font size */
+    opacity: 0;
+    padding: 20px; /* Adjusted padding */
+    transition: opacity 0.2s ease-in-out;
+    z-index: 1;
+    width: 95%; /* Adjusted width */
+    margin-left: -47.5%; /* Half of the width to center the text box */
+    text-align: center;
+}
+
+.image-link:after {
+    content: attr(data-description);
+    top: 70%;
+    font-family: 'DM Sans';
+    font-size: 18px; /* Increased font size */
+    font-weight: normal;
+    padding: 20px; /* Adjusted padding */
+}
+
+.image-link:hover:before,
+.image-link:hover:after {
+    opacity: 1;
+}
+
+.image-link:before {
+    z-index: 2; /* Ensure title is above description */
+}
+
+.image-link:hover img,
+.image-link:hover:before,
+.image-link:hover:after {
+    border-radius: 10px; /* Maintain rounded edges during hover */
+}
+
+
+
+
+
+/* Massage Description LEFT ALIGN*/
+.massage-description-left {
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 12px;
+    padding-left: 270px;
+    padding-right: 560px;
+    color: rgba(87, 11, 143);
+    text-align: left;
+}
+
+/* Massage Description RIGHT ALIGN*/
+.massage-description-right {
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 12px;
+    padding-left: 560px;
+    padding-right: 270px;
+    color: rgba(87, 11, 143);
+    text-align: right;
+}
+
+/* Massage Title */
+.massage-title {
+    font-size: 48px;
+    font-family: 'DM Sans';
+    font-weight: bold;
+}
+
+/* Massage Info (Time and Price) */
+.massage-info {
+    font-size: 19px;
+}
+
+.massage-description-right .massage-info {
+    justify-content: flex-end;
+}
+
+/* Massage Text */
+.massage-text {
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #2F5735;
+}
+
+/* Prendre RDV section */
+
+.prendre-rdv-section{
+    padding-top: 150px;
+}
+
+/* Carte Cadeau Section */
+
+.carte-cadeau-section {
+    position: relative;
+    /* height: 100%;
+    align-items: center; */
+    padding-top: 150px;
+}
+
+.carte-cadeau{
+    margin: 0px 40px;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.carte-cadeau-box {
+    position: relative;
+    width: 827px;
+    height: 583px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.carte-cadeau-box img{
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 1s;
+
+}
+
+.carte-cadeau-box img:nth-child(2){
+    transform: rotateY(180deg);
+}
+
+.carte-cadeau-box:hover img:nth-child(2){
+    transform: rotateY(0deg);
+}
+
+.carte-cadeau-box:hover img:nth-child(1){
+    transform: rotateY(-180deg);
+}
+
+.propos-section{
+    position: relative;
+    /* height: 100%;
+    align-items: center; */
+    padding-top: 150px;
+}
+
+.propos-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px 200px 0 200px;
+}
+
+.propos-container img:nth-child(1){
+    /* padding: 0 30px; */
+    max-height: 500px;
+    border-radius: 50%;
+}
+
+.propos-text{
+    padding: 0 30px;
+    font-family: 'DM Sans';
+    color: #2F5735;
+    font-weight: regular;
+    font-size: 20px;
+}
+
+
+
+
+/* Sections */
+
+section {
+    position: relative;
+}
+
+/* Header Section */
+header {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 430px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header-content {
+    margin-top: 130px;
+    text-align: center;
+}
+
+header img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.curved-text {
+    width: 700.66px;
+    height: 314.51px;
+    margin-top: -150px;
+}
+
+.rotate-on-scroll {
+
+    height: 400px;
+    max-height: none;
+    width: 400px;
+    max-width: none;
+}
+
+.header-box {
+    width: 750px;
+    margin-top: 175px;
+    color:rgba(87, 11, 143);
+    font-family: 'DM Sans', sans-serif;
+    font-weight:lighter;
+    text-align: center;
+    border-color: rgba(87, 11, 143);
+    border-width: 3px;
+    border-radius: 10px;
+    font-size: 28px;
+    padding: 20px 40px;
+    line-height: 1.2;
+}
+
+/* Additional Styles for Header Content if needed */
+
+
+
+
+/* Footer */
+
+footer {
+    font-family: 'DM sans';
+    background: linear-gradient(to bottom, transparent, #E9B8F7);
+    padding: 1rem;
+}
+
+/* Form */
+
+.focus-style:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #E9B8F7 !important;
+}
+
+.custom-form input {
+    width: 400px !important;
+    font-family: 'DM Sans', sans-serif !important;
+    color: #2F5735 !important;
+}
+
+.button:hover {
+    background-color: #E9B8F7 !important;
+}

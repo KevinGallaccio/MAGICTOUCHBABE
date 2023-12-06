@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <title>MagicTouchBabe</title>
+
+</head>
+
+<body class="font-body bg-main-bg text-main-text">
+
+    <!-- Navbar Spacer (to maintain space when navbar is transparent) -->
+    <div id="navbar-spacing"></div>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <!-- Navbar Links - Left -->
+        <div id="navbar-links-left">
+            <a href="#accueil" class="navbar-link">ACCUEIL</a>
+            <div id="massage-button" class="navbar-group">
+                <a href="#massages">
+                    <button class="navbar-link">MASSAGES</button>
+                    <!-- Dropdown menu for Massages -->
+                    <ul class="navbar-dropdown" id="dropdown-menu">
+                        <li><a href="#detox">Detox du visage</a></li>
+                        <li><a href="#liftandglow">Lift & Glow</a></li>
+                        <li><a href="#liftandgo">Lift & Go</a></li>
+                        <li><a href="#maindusaule">La main du Saule</a></li>
+                        <li><a href="#fascialchimie">FasciALCHIMIE&copy;</a></li>
+                        <li><a href="#cures">Cures</a></li>
+                    </ul>
+                </a>
+            </div>
+            <a href="#cartecadeau" class="navbar-link" style="margin-right: 85px;">CARTE CADEAU</a>
+            <!-- <div class="filler"></div> -->
+        </div>
+
+        <!-- Logo -->
+        <div id="logo-container" class="navbar-link">
+            <a href="#top" class="navbar-logo-link">
+                <img id="logo" src="img/LOGO.png" alt="MagicTouchBabe Logo" class="navbar-logo">
+                <img id="logo-hover" src="img/LOGO BLANC.png" alt="MagicTouchBabe Hover Logo" class="navbar-logo">
+            </a>
+        </div>
+
+        <!-- Navbar Links - Right -->
+        <div id="navbar-links-right">
+            <!-- <div class="filler"></div> -->
+            <a href="#prendre-rdv" class="navbar-link" style="margin-left: 85px;">RDV</a>
+            <a href="#propos" class="navbar-link">A PROPOS</a>
+            <a href="#contact" class="navbar-link">CONTACT</a>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Header Section -->
+    <header id="top" style="background-image: url('img/Fond de site 2.png');">
+        <div class="header-content">
+            <img src="img/Curved Text.png" alt="Facialiste Holistique" class="curved-text">
+            <img src="img/Icone-04.png" alt="Hand Logo" class="rotate-on-scroll">
+            <!-- Add any additional content for the header if needed -->
+        </div>
+        <div>
+            <h3 class="header-box">Spécialiste en massage du visage à Marseille</p>
+        </div>
+    </header>
+
+
+
+    <!-- Accueil Section -->
+    <div id="accueil" style="padding-top: 250px;"></div>
+    <section class="accueil-section">
+        <img src="img/ACCUEIL.jpeg" alt="Hello">
+        <p class="accueil-text">
+            Donner de l'éclat & prendre soin du visage à travers différentes techniques.
+            <br>
+            Proposer un moment sur-mesure et adapté à vos besoins.
+            <br>
+            Approche Holistique du bien-être : la beauté du visage est un tout.
+            <br>
+            <br>
+            Mon envie à travers cette pratique est de vous aider à vous sentir bien dans votre peau 
+            et à prendre soin de vous. En vous offrant des moments de détente, en sculptant et lissant tes traits, 
+            et en te donnant des conseils personnalisés pour continuer à la maison et apprivoiser ton visage.
+            Le selfcare est un outil précieux dans notre vie quotidienne. Je t'accompagne sur cette voie.
+            À bientôt pour un doux moment </p>
+        <!-- Add any additional content for the header if needed -->
+    </section>
+
+    <!-- Massages Section -->
+    <div id="massages" class="massage-section">
+        <div class="section-heading">Massages</div>
+        <section class="presentation">
+            <a href="#detox" class="image-link" data-title="Detox du Visage"
+                data-description="This is a massage that is done by smoothly relaxing the face of the patient.">
+                <img src="img/DETOX.jpeg" alt="DETOX DU VISAGE">
+            </a>
+
+            <a href="#liftandglow" class="image-link" data-title="Lift & Glow"
+                data-description="This is a massage that is done by smoothly relaxing the face of the patient.">
+                <img src="img/LIFTANDGLOW.jpeg" alt="LIFT & GLOW">
+            </a>
+
+            <a href="#liftandgo" class="image-link" data-title="Lift & Go"
+                data-description="This is a massage that is done by smoothly relaxing the face of the patient.">
+                <img src="img/LIFTANDGO.jpeg" alt="LIFT & GO">
+            </a>
+
+            <a href="#maindusaule" class="image-link" data-title="Main du Saule"
+                data-description="This is a massage that is done by smoothly relaxing the face of the patient.">
+                <img src="img/MAINDUSAULE.jpeg" alt="MAIN DU SAULE">
+            </a>
+
+            <a href="#fascialchimie" class="image-link" data-title="FasciALCHIMIE&copy"
+                data-description="This is a massage that is done by smoothly relaxing the face of the patient.">
+                <img src="img/FASCIALCHIMIE.jpeg" alt="FasciALCHIMIE">
+            </a>
+        </section>
+
+
+        <!-- Detox Massage -->
+        <section id="detox" class="massage-description-left">
+            <h2 class="massage-title">DETOX DU VISAGE</h2>
+            <div class="massage-info">
+                <p>30min | 50€</p>
+            </div>
+            <p class="massage-text">C'est un massage très doux et peu appuyé qui va venir détoxifier et apporter de
+                la luminosité au teint. Il aide à dégonfler et à réduire les inflammations. Il apporte de la détente
+                et du bien-être &lt;3</p>
+        </section>
+
+        <!-- Lift & Glow Massage -->
+        <section id="liftandglow" class="massage-description-right">
+            <h2 class="massage-title">LIFT & GLOW</h2>
+            <div class="massage-info">
+                <p>45min | 65€</p>
+            </div>
+            <p class="massage-text">Un massage profond et drainant. Il est manuel et utilise des outils issu de la
+                Médecine
+                Traditionnelle Chinoise comme les ridokis ou les ventouses.
+                Il permet de raffermir la peau et de sculpter le visage. Il vient travailler et détendre les muscles
+                faciaux et
+                aide à diminuer l'apparence des rides et à les prévenir.</p>
+        </section>
+
+        <!-- Lift & Go Massage -->
+        <section id="liftandgo" class="massage-description-left">
+            <h2 class="massage-title">LIFT & GO</h2>
+            <div class="massage-info">
+                <p>30min | 55€</p>
+            </div>
+            <p class="massage-text">C'est la version courte du massage Lift & Glow pour les personnes pressées &lt;3
+                Il s'agit d'un massage profond et tonique. Il mêle l'utilisation d'outils issus de la Médecine
+                Traditionnelle Chinoise
+                comme les ridokis, les ventouses ou des techniques de palpé-roulé. Il permet de raffermir la peau et de
+                sculpter le visage.
+                Il vient travailler et détendre les muscles faciaux et aide à diminuer l'apparence des rides et à les
+                prévenir.</p>
+        </section>
+
+        <!-- La main du Saule Massage -->
+        <section id="maindusaule" class="massage-description-right">
+            <h2 class="massage-title">LA MAIN DU SAULE</h2>
+            <div class="massage-info">
+                <p>60min | 75€</p>
+            </div>
+            <p class="massage-text">Inspiré du Kobido. Le Kobido est un art ancestral japonais, autrefois réservé aux
+                impératrices. Il est présenté comme l'un des traitements naturels les plus efficaces pour améliorer
+                l'état de la peau et réduire le processus de vieillissement. Il vient améliorer la santé et la vitalité
+                du visage. Il mêle des manoeuvres profondes, superficielles, toniques et lentes. Il est aussi très
+                apaisant.</p>
+        </section>
+
+        <!-- FasciALCHIMIE Massage -->
+        <section id="fascialchimie" class="massage-description-left">
+            <h2 class="massage-title">FasciALCHIMIE&copy;</h2>
+            <div class="massage-info">
+                <p>70min | 85€</p>
+            </div>
+            <p class="massage-text">L'objectif de ce massage est de travailler en amont sur tout ce qui empêche
+                l'énergie de circuler correctement, libérant l'émotionnel, remodelant l'ensemble des tissus et de la
+                matière, permettant ainsi de maximiser les effets du lifting. Le protocole mêle des techniques issues du
+                Kobido et d'outils de la médecine traditionnelle chinoise à des méthodes énergétiques pour réactiver
+                l'énergie vitale de nos cellules et stimuler la réceptivité de la peau. Le modelage FasciALCHIMIE&copy;
+                est un massage sur-mesure, très efficace pour ses effets raffermissants et lissants dès la 1ère séance.
+            </p>
+        </section>
+
+    </div>
+
+    <!-- Carte Cadeau Section-->
+    <div id="cartecadeau" class="carte-cadeau-section">
+        <div class="section-heading">Carte Cadeau</div>
+    </div>
+    <div class="carte-cadeau">
+        <div class="carte-cadeau-box">
+            <img src="img/Carte cadeau_recto2.png" alt="recto">
+            <img src="img/Carte cadeau_verso.png" alt="verso">
+        </div>
+    </div>
+
+
+
+
+    <!-- Prendre RDV Section-->
+    <div id="prendre-rdv" class="prendre-rdv-section">
+        <!-- Title -->
+        <div class="section-heading">Prendre RDV</div>
+        <div class="calendly-inline-widget" data-url="https://calendly.com/magictouchbabe?hide_landing_page_details=1"
+            style="min-width:320px;height:1000px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    </div>
+
+
+    <!-- A PROPOS Section-->
+    <div id="propos" class="propos-section">
+        <div class="section-heading">A Propos</div>
+        <div class="propos-container">
+            <img src="img/photo-profil-square.jpg" alt="Clotilde">
+            <div><img src="img/Icone-02.png" alt="icone?" style="max-height: 130px;">
+                <p class="propos-text">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+                    ornare,
+                    eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus
+                    id rutrum
+                    lorem imperdiet. Nunc ut sem vitae risus tristique posuere.Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+                    ornare,
+                    eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus
+                    id rutrum
+                    lorem imperdiet.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Contact Section -->
+
+    <div>
+        <!-- Title -->
+        <section id="contact" class="h-full flex flex-col justify-center items-center text-white pt-52">
+            <h1 class="text-9xl font-Playfair font-bold text-magictouchpurple mb-4">Contact</h1>
+            <!-- Add any additional content for the header if needed -->
+        </section>
+
+        <section class="py-12 px-4 bg-secondary text-main-text pb-80 flex justify-evenly">
+
+            <!-- Formspree Form -->
+            <form action="https://formspree.io/f/xzbllozk" method="POST" class="flex flex-col items-center">
+                <div class="mb-4">
+                    <label class="font-DM-Sans font-bold text-magictouchpurple">
+                        TON NOM:
+                    </label>
+                    <div class="mt-2">
+                        <input type="text" name="name" class="border p-2 rounded bg-magictouchpink focus-style"
+                            style="border-color: #E9B8F7; width: 400px; background-color: #F8EFE6; font-family:'DM Sans', sans-serif; color: #2F5735" />
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="font-DM-Sans font-bold text-magictouchpurple">
+                        TON EMAIL:
+                    </label>
+                    <div class="mt-2">
+                        <input type="email" name="email" class="border p-2 rounded bg-magictouchpink focus-style"
+                            style="border-color: #E9B8F7; width: 400px; background-color: #F8EFE6; font-family:'DM Sans', sans-serif; color: #2F5735" />
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="font-DM-Sans font-bold text-magictouchpurple">
+                        OBJET:
+                    </label>
+                    <div class="mt-2">
+                        <input type="text" name="subject" class="border p-2 rounded bg-magictouchpink focus-style"
+                            style="border-color: #E9B8F7; width: 400px; background-color: #F8EFE6; font-family:'DM Sans', sans-serif; color: #2F5735" />
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="font-DM-Sans font-bold text-magictouchpurple">
+                        TON MESSAGE:
+                    </label>
+                    <div class="mt-2">
+                        <textarea name="message" rows="12" class="border p-2 rounded bg-magictouchpink focus-style"
+                            style="border-color: #E9B8F7; width: 400px; background-color: #F8EFE6; font-family:'DM Sans', sans-serif; color: #2F5735"></textarea>
+                    </div>
+                </div>
+
+                <button type="submit"
+                    class="border mt-4 p-2 rounded bg-magictouchviolet font-bold text-magictouchpurple"
+                    style="border-color: #570B8F; border-width: 3px; border-radius: 10px; transition: background-color 0.3s;">
+                    ENVOYER
+                </button>
+            </form>
+            <div>
+                <!-- <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;"> -->
+                    <img src="img/Icone-08.png" alt="insta" style="width: 80px; margin:0px 18px 18px 0px;">
+                    <p
+                        style="font-family: 'DM Sans'; font-size: 30px; color:#570B8F; text-align: center; padding-bottom: 20px;">
+                        Mes derniers posts Instagram</p>
+                <!-- </div> -->
+                <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+                <div class="elfsight-app-83e84758-f7c1-48b9-8b7c-d30f3d66db92" data-elfsight-app-lazy></div>
+                <script async src="//www.instagram.com/embed.js"></script>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-secondary pt-40 pb-10 flex justify-between items-center text-main-text text-magictouchpurple ">
+        <!-- Left side of footer -->
+        <div class="flex items-center space-x-12 ml-12">
+            <!-- Small version of the logo -->
+            <a href="#top"><img src="img/MONOGRAMME.png" alt="MagicTouchBabe Logo" class="h-12"></a>
+            <div class="ml-12">
+                <p class="text-accents font-bold text-base">FOLLOW</p>
+                <a href="https://www.instagram.com/magictouchbabe/" class="text-accents font-thin">Instagram</a>
+            </div>
+            <div>
+                <p class="text-accents font-bold text-base">CONTACT</p>
+                <a href="mailto:magictouchbabe@gmail.com" class="text-accents font-thin">email:
+                    magictouchbabe@gmail.com</a>
+            </div>
+        </div>
+
+        <!-- Right side of footer -->
+        <div class="text-accents mr-12">
+            <p>&copy; 2023 - made by <a href="https://www.instagram.com/soopadoopa/"
+                    class="underline hover:no-underline">Kevin Gallaccio</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        window.onscroll = function () {
+            scrollRotate();
+        };
+
+        function scrollRotate() {
+            let logo = document.querySelector('.rotate-on-scroll');
+            let centerY = window.innerHeight / 2;
+            let rotation = window.pageYOffset / 4;
+            logo.style.transform = `translate(-50%, -50%) rotate(${rotation}deg)`;
+
+        }
+
+    </script>
+
+</body>
